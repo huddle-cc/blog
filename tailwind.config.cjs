@@ -10,6 +10,7 @@ module.exports = {
 				white: '#f8f9fa'
 			},
 			fontFamily: {
+				heading: ['Nexa', ...defaultTheme.fontFamily.sans],
 				body: ['Manrope', ...defaultTheme.fontFamily.sans]
 			},
 			gridTemplateColumns: {

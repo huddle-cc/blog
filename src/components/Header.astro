@@ -10,14 +10,8 @@ import ToggleTheme from './ToggleTheme.astro'
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
-		name: 'Github',
-		url: 'https://github.com/danielcgilibert/blog-template',
-		icon: GithubIcon
-	},
-
-	{
-		name: 'Twitter',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		name: 'Bluesky',
+		url: 'https://bsky.app/profile/huddlecc.bsky.social',
 		icon: TwitterIcon
 	}
 ]
@@ -42,13 +36,21 @@ const SOCIALNETWORKS = [
 			</div>
 
 			<div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
-				{
+				<!-- {
 					SOCIALNETWORKS.map((network) => (
 						<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
 							<span>{<network.icon />} </span>
 						</HeaderLink>
 					))
-				}
+				} -->
+				<HeaderLink
+					class=''
+					href='https://bsky.app/profile/huddlecc.bsky.social'
+					target='_blank'
+					aria-label='Bluesky'
+				>
+					<span>🦋</span>
+				</HeaderLink>
 			</div>
 		</nav>
 	</div>

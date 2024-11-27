@@ -70,6 +70,20 @@ import { AstroFont } from 'astro-font'
 <AstroFont
 	config={[
 		{
+			preload: true,
+			display: 'swap',
+			name: 'Nexa',
+			fallback: 'sans-serif',
+			src: [
+				{
+					weight: '700',
+					preload: true,
+					style: 'bold',
+					path: join(process.cwd(), 'public', 'fonts', 'NexaBold.woff')
+				}
+			]
+		},
+		{
 			preload: false,
 			display: 'swap',
 			name: 'Manrope',
